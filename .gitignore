@@ -6,4 +6,5 @@
 
 #忽略 本地產生的文件
 .DS_Store
-image
+**/image
+
