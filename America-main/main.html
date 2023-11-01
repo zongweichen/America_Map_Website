@@ -97,13 +97,41 @@
           </div>
         </div>
       </nav>
-      <div>
-        <img src="../image/ammap.jpeg" usemap="#111" width="60%%">
-        <map name="111">
-        <area href="" coords="28,16,224,254" shape="rect">
+      <div class="map1" hith>
+        <img id='my-image'class="map2"src="../image/test.png" usemap="#111" >
+        <map class="map3"name="111">
+          <area target="" alt="" title="" href="" coords="524,387,441,780,1220,1883,1143,127,643,76" shape="poly">
         </map>
     </div>
-    
+    <script>
+      var image = document.getElementById('my-image');
+      var imageMap = document.querySelector('map[name="111"]');
+      // 监听图像加载完成事件
+      image.onload = function() {
+        // 获取当前图像尺寸
+        var imageWidth = image.width;
+        var imageHeight = image.height;
+
+        // 更新地图坐标
+        var areas = imageMap.getElementsByTagName('area');
+        for (var i = 0; i < areas.length; i++) {
+          var originalCoords = areas[i].getAttribute('coords').split(',');
+          var updatedCoords = originalCoords.map(function(coord) {
+            return coord * (imageWidth / image.naturalWidth); // 调整坐标
+          });
+          areas[i].setAttribute('coords', updatedCoords.join(','));
+        };
+      };
+
+      // 监听窗口大小变化，重新加载图像以触发更新
+      window.addEventListener('load', function(){
+      image.src = image.src // 重新加载图像
+      });
+      window.addEventListener('resize', function(){
+      image.src = image.src // 重新加载图像
+      });
+
+    </script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
