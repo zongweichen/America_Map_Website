@@ -8,3 +8,14 @@
 .DS_Store
 **/image
 
+# Node.js
+node_modules/
+
+# Dependency lock files
+package-lock.json
+package.json
+
+# 忽略Model
+jQuery-rwdImageMaps/
+
+
