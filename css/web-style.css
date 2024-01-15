@@ -33,7 +33,8 @@
     display: flex;
     justify-content: center; /* 水平居中 */
     align-items: center;  /*垂直居中 */
-    margin: 0px 0px 0px 130px; /* 邊界 top right bottom left*/
+    margin: 0px 0px 0px 40px; /* 邊界 top right bottom left*/
+    width: 100%;
 }
 
 .map3{
@@ -97,7 +98,7 @@
   }
   
   .footer .footer-top {
-    background: white url(../img/footer-bg.png) no-repeat right top;
+    background: white url( none ) no-repeat right top;
     background-size: contain;
     border-top: 1px solid #e1ecff;
     border-bottom: 1px solid #e1ecff;
