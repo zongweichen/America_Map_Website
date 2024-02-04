@@ -211,3 +211,43 @@
     font-size: 13px;
     color: #012970;
   }
+  .statemap{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 28.5%;
+    width:45%;
+}
+.services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+}
+.services .icon {
+    position: absolute;
+    left: -10px;
+    top: calc(50% - 30px);
+  }
+  
+  .services .icon i {
+    font-size: 64px;
+    line-height: 1;
+    transition: 0.5s;
+  }
+
+.text-center {
+  margin-top: 0px;
+  margin-right: 15%;
+  margin-bottom: 0px;
+  margin-left: 15%;
+  width:70%;
+}
+
+.h2{
+  line-height: 20%;
+}
