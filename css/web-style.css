@@ -230,7 +230,7 @@
 }
 .services .icon {
     position: absolute;
-    left: -20px;
+    left: -10px;
     top: calc(50% - 30px);
   }
   
@@ -239,3 +239,15 @@
     line-height: 1;
     transition: 0.5s;
   }
+
+.text-center {
+  margin-top: 0px;
+  margin-right: 15%;
+  margin-bottom: 0px;
+  margin-left: 15%;
+  width:70%;
+}
+
+.h2{
+  line-height: 20%;
+}
