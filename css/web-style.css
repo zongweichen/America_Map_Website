@@ -240,14 +240,45 @@
     transition: 0.5s;
   }
 
-.text-center {
-  margin-top: 0px;
-  margin-right: 15%;
-  margin-bottom: 0px;
-  margin-left: 15%;
-  width:70%;
-}
 
 .h2{
   line-height: 20%;
+}
+
+/* 模態視窗的內容 */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* 關閉按鈕 */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.info-button{
+  background-color: #2e5bae; /* 綠色 */
+  border: none; /* 沒有邊框 */
+  color: white; /* 文字顏色為白色 */
+  padding: 10px 28px; /* 內部填充 */
+  text-align: center; /* 文字置中 */
+  text-decoration: none; /* 沒有文字裝飾 */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; /* 當滑鼠移過時顯示為手指形狀 */
+  transition-duration: 0.4s; /* 過渡效果 */
 }

@@ -4,29 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>American Map</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/jQuery-rwdImageMaps/jquery.rwdImageMaps.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+
+    <!-- Css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="../css/web-style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
   </head>
   <body>
-    <main id="main">
+    <!-- ======= Nvbar ======= -->
+    <div class=".container-fluid">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
           <a class="navbar-brand " href="#">
-            <img class=flag src="../image/flag.JPG" alt="Logo" width="70" height="60" class="d-inline-block">
+            <img class=flag src="../image/flag.png" alt="Logo" width="10px" height="10px" class="d-inline-block">
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav ">
-              <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle title_font_size" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       美西
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#"><img class=states src="../image/WA/wa.JPG">華盛頓州</a></li>
+                      <li><a class="dropdown-item" href="America_Map_Website/America-main/washington.html"><img class=states src="../image/WA/wa.JPG">華盛頓州</a></li>
                       <li><a class="dropdown-item" href="#"><img class=states src="../image/WA/or.JPG">奧勒岡州</a></li>
                       <li><a class="dropdown-item" href="#"><img class=states src="../image/WA/ca.JPG">加州</a></li>
                       <li><a class="dropdown-item" href="#"><img class=states src="../image/WA/id.JPG">愛達荷州</a></li>
@@ -40,6 +47,7 @@
                       <li><a class="dropdown-item" href="#"><img class=states src="../image/WA/ak.JPG">阿拉斯加</a></li>
                     </ul>
                   </li>
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle title_font_size" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   美中
@@ -61,13 +69,9 @@
                   <li><a class="dropdown-item" href="#"><img class=states src="../image/MA/tn.JPG">田納西州</a></li>
                   <li><a class="dropdown-item" href="#"><img class=states src="../image/MA/ms.JPG">密西西比州</a></li>
                   <li><a class="dropdown-item" href="#"><img class=states src="../image/MA/al.JPG">阿拉巴馬</a></li>
-
-
-
-
-
                 </ul>
               </li>
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle title_font_size" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   美東
@@ -93,129 +97,139 @@
                   <li><a class="dropdown-item" href="#"><img class=states src="../image/EA/ma.JPG">麻薩諸塞州</a></li>
                   <li><a class="dropdown-item" href="#"><img class=states src="../image/EA/vt.JPG">佛蒙特州</a></li>
                   <li><a class="dropdown-item" href="#"><img class=states src="../image/EA/nh.JPG">新罕布夏州</a></li>
-                  <li><a class="dropdown-item" href="#"><img class=states src="../image/EA/maine.JPG">緬因州</a></li>
+                  <li><a class="dropdown-item" href="https://zoom.us/postattendee?mn=eHPsw900h3sAthc4WSNyrIENPkb__mrTcA9e.gWYRuweXsZwEpjQF"><img class=states src="../image/EA/maine.JPG">緬因州</a></li>
                 </ul>
               </li>
-
-              
-            </li>
             </ul>
           </div>
+        </nav>
+    </div>
+    <!-- End Nvbar -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+      <div>
+        <img class="statemap" src="../image/statemap/washington.png">
+        <div class="text-center" line-height: 10%>
+            <h1>華盛頓州</h1>
         </div>
-      </nav>
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-          <div>
-            <img class="statemap" src="../image/statemap/washington.png">
-            <div class="text-center" line-height: 10%>
-               <h1>華盛頓州</h1>
-            </div>
+        <div class="text-center">
+          <p class="hptext">華盛頓州，簡稱華州，是一個位於美國西北太平洋沿岸的州。北接加拿大英屬哥倫比亞省，南接奧勒岡州，東臨愛達荷州，西鄰太平洋。為紀念美國首任總統，喬治·華盛頓而成立，亦是唯一以總統名稱命名的州。</p>
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= state Section ======= -->
+  <main id="main">
+    <section id="cta" class="cta">
+      <div class="container" data-aos="fade-in">
+        <section id="services" class="services ">
+          <div class="container">
             <div class="text-center">
-              <p class="hptext">華盛頓州，簡稱華州，是一個位於美國西北太平洋沿岸的州。北接加拿大英屬哥倫比亞省，南接奧勒岡州，東臨愛達荷州，西鄰太平洋。為紀念美國首任總統，喬治·華盛頓而成立，亦是唯一以總統名稱命名的州。</p>
+              <h2>關於華盛頓州</h2>
+            </div>
+            <div>
+              <p></p>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="icon-box" data-aos="fade-up">
+                  <div class="icon"><i class="bi bi-buildings-fill" style="color: #C8282A;"></i></div>
+                  <h4 class="text-center">首都</h4>
+                  <p class="text-center">奧林匹亞 Olimpia</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="icon-box" data-aos="fade-up">
+                  <div class="icon"><i class="bi bi-rulers" style="color: #52C1A6"></i></div>
+                  <h4 class="text-center">面積</h4>
+                  <p class="text-center">66,511 平方英哩</p>
+                </div>
+              </div>
+    
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-box">
+                  <div class="icon"><i class="bi bi-card-checklist" style="color: #377190;"></i></div>
+                  <h4 class="text-center">人口數</h4>
+                  <p class="text-center">7,705,281</p>
+                </div>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-box">
+                  <div class="icon"><i class="bi bi-coin" style="color:#F6A411;"></i></div>
+                  <h4 class="text-center">州稅</h4>
+                  <p class="text-center">6.5%</p>
+                </div>
+              </div>
 
             </div>
-          </div>
-  
-        </div>
-      </section><!-- End About Section -->
-  
-      <!-- ======= Cta Section ======= -->
-      <section id="cta" class="cta">
-        <div class="container" data-aos="fade-in">
-  
-          
-          <section id="services" class="services ">
-            <div class="container">
-              <div class="text-center">
-                <h2>關於華盛頓州</h2>
+            <!-- 模態視窗的結構 -->
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                p>Bill Speidel's Underground Tour</p>
+                    <p>Boeing 747-767-777 Production Facility</p>
+                    <p>Bonneville Dam-Washington Shore Visitor Center</p>
+                    <p>The Capital Campus</p>
+                    <p>Cheney Cowles Memorial Museum</p>
+                    <p>Deception Pass State Park</p>
+                    <p>Fort Worden State Park</p>
+                    <p>Grand Coulee Dam</p>
+                    <p>Hoh Rain Forest</p>
+                    <p>Hovander Homestead</p>
+                    <p>Hurricane Ridge</p>
+                    <p>Lake Chelan</p>
+                    <p>Lake Washington Ship Canal and Hiram M. Chittenden Locks</p>
+                    <p>Manito Park</p>
+                    <p>Maryhill Museum of Art</p>
+                    <p>Mount Rainier National Park</p>
+                    <p>Mount St. Helens National Volcanic Monument</p>
+                    <p>Museum of Flight</p>
+                    <p>Northwest Trek</p>
+                    <p>Ohme Gardens County Park</p>
+                    <p>Olympic National Park</p>
+                    <p>Pike Place Market</p>
+                    <p>Pioneer Square Historic District</p>
+                    <p>Point Defiance Park</p>
+                    <p>Point Defiance Zoo and Aquarium</p>
+                    <p>Port Townsend</p>
+                    <p>Riverfront Park</p>
+                    <p>Rocky Reach Dam</p>
+                    <p>San Juan Island</p>
+                    <p>Seattle Art Museum</p>
+                    <p>Seattle Center</p>
+                    <p>太空針塔 Space Needle</p>
+                    <p>State Capital Museum</p>
+                    <p>Sun Lakes State Park</p>
+                    <p>Tillicum Village</p>
+                    <p>Washington State History Museum</p>
+                    <p>Woodland Park Zoo</p>
+                  </p>
               </div>
+            </div>
+
             
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="icon-box" data-aos="fade-up">
-                    <div class="icon"><i class="bi bi-buildings-fill" style="color: #C8282A;"></i></div>
-                    <h4 class="text-center">首都</h4>
-                    <p class="text-center">奧林匹亞 Olimpia</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="icon-box" data-aos="fade-up">
-                    <div class="icon"><i class="bi bi-rulers" style="color: #52C1A6"></i></div>
-                    <h4 class="text-center">面積</h4>
-                    <p class="text-center">66,511 平方英哩</p>
-                  </div>
-                </div>
-      
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                  <div class="icon-box">
-                    <div class="icon"><i class="bi bi-card-checklist" style="color: #377190;"></i></div>
-                    <h4 class="text-center">人口數</h4>
-                    <p class="text-center">7,705,281</p>
-                  </div>
-                </div>
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                  <div class="icon-box">
-                    <div class="icon"><i class="bi bi-coin" style="color:#F6A411;"></i></div>
-                    <h4 class="text-center">州稅</h4>
-                    <p class="text-center">6.5%</p>
-                  </div>
-                </div>
 
-              </div>
-              <div class="row">
-                <div class="col-md-6 text-center">
-                  <div class="icon-box" data-aos="fade-up">
-                    <div class="icon"><i class="bi bi-map" style="color: #F3792E;"></i></div>
-                    <h4>觀光景點</h4>
-                    <p>
-                      <p>Bill Speidel's Underground Tour</p>
-                      <p>Boeing 747-767-777 Production Facility</p>
-                      <p>Bonneville Dam-Washington Shore Visitor Center</p>
-                      <p>The Capital Campus</p>
-                      <p>Cheney Cowles Memorial Museum</p>
-                      <p>Deception Pass State Park</p>
-                      <p>Fort Worden State Park</p>
-                      <p>Grand Coulee Dam</p>
-                      <p>Hoh Rain Forest</p>
-                      <p>Hovander Homestead</p>
-                      <p>Hurricane Ridge</p>
-                      <p>Lake Chelan</p>
-                      <p>Lake Washington Ship Canal and Hiram M. Chittenden Locks</p>
-                      <p>Manito Park</p>
-                      <p>Maryhill Museum of Art</p>
-                      <p>Mount Rainier National Park</p>
-                      <p>Mount St. Helens National Volcanic Monument</p>
-                      <p>Museum of Flight</p>
-                      <p>Northwest Trek</p>
-                      <p>Ohme Gardens County Park</p>
-                      <p>Olympic National Park</p>
-                      <p>Pike Place Market</p>
-                      <p>Pioneer Square Historic District</p>
-                      <p>Point Defiance Park</p>
-                      <p>Point Defiance Zoo and Aquarium</p>
-                      <p>Port Townsend</p>
-                      <p>Riverfront Park</p>
-                      <p>Rocky Reach Dam</p>
-                      <p>San Juan Island</p>
-                      <p>Seattle Art Museum</p>
-                      <p>Seattle Center</p>
-                      <p>太空針塔 Space Needle</p>
-                      <p>State Capital Museum</p>
-                      <p>Sun Lakes State Park</p>
-                      <p>Tillicum Village</p>
-                      <p>Washington State History Museum</p>
-                      <p>Woodland Park Zoo</p>
-                    </p>
+            <div class="row">
+              <div class="col-md-6 text-center">
+                <div class="icon-box" data-aos="fade-up">
+                  <div class="icon"><i class="bi bi-map" style="color: #F3792E;"></i></div>
+                  <h4>觀光景點</h4>
+                  <!-- 觸發模態視窗的按鈕 -->
+                  <button id="myBtn" class="info-button btn btn-outline-secondary">詳細資訊</button>
                   </div>
                 </div>
-          
+        
                 </div>
-
-
-           
             </div>
           </section><!-- End Services Section -->
         </div>
       </section><!-- End Cta Section -->
+    </main>
+    <!-- js -->
+    <script src="/script/american-website.js"></script>
   </body>
 </html>
