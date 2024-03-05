@@ -1,3 +1,11 @@
+// navbar
+$(function nvabar(){
+  $("#navbar").load("/America-main/common/navbar.html")});
+
+$(function footer(){
+  $("#footer").load("/America-main/common/footer.html")});
+
+
 
 // 獲取模態視窗元素
 var modal = document.getElementById("myModal");

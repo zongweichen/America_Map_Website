@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center; /* 水平居中 */
     align-items: center;  /*垂直居中 */
-    margin: 0px 0px 0px 40px; /* 邊界 top right bottom left*/
+    margin: 0px 0px 0px 5px; /* 邊界 top right bottom left*/
     width: 100%;
 }
 
