@@ -282,3 +282,17 @@
   cursor: pointer; /* 當滑鼠移過時顯示為手指形狀 */
   transition-duration: 0.4s; /* 過渡效果 */
 }
+
+/*carousel*/
+.carousel-image {
+  height: 500px;
+  width: auto;
+}
+
+/* card container in Modal */
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
