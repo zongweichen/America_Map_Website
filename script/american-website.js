@@ -1,11 +1,16 @@
 // navbar
 $(function nvabar(){
-  $("#navbar").load("/America-main/common/navbar.html")});
+  $("#navbar").load("/America-main/common/navbar.html", function() {
+    // 這裡的程式碼將在內容加載完成後執行
+    $(".on_processing").click(function() {
+      $('#modal_state').modal('show');
+    });
+  });
+});
 
 $(function footer(){
-  $("#footer").load("/America-main/common/footer.html")});
-
-
+  $("#footer").load("/America-main/common/footer.html");
+});
 
 // 獲取模態視窗元素
 var modal = document.getElementById("myModal");
@@ -24,11 +29,4 @@ btn.onclick = function() {
 // 當用戶點擊關閉按鈕，關閉模態視窗
 span.onclick = function() {
   modal.style.display = "none";
-}
-
-// 當用戶點擊模態視窗以外的地方，關閉模態視窗
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
 }
