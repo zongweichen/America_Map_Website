@@ -41,6 +41,12 @@
     position: absolute;
 }
 
+.state_info{
+  padding-bottom: 18px;
+}
+.on_processing {
+  cursor: pointer;
+}
 .footer {
     background: #f6f9ff;
     padding: 0 0 30px 0;
