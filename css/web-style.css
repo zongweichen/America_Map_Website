@@ -54,6 +54,7 @@
 };
 
 .footer {
+    background-image: url('../image/footer＿background.png');
     background-size: cover; /* 讓背景圖片覆蓋整個元素 */
     padding: 0 0 30px 0;
     font-size: 14px;
@@ -193,7 +194,7 @@
     top: calc(50% - 30px);
   }
   
-  .services .icon i {
+.services .icon i {
     font-size: 64px;
     line-height: 1;
     transition: 0.5s;
