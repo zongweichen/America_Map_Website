@@ -1,16 +1,16 @@
 // navbar
-$(function nvabar(){
-  $("#navbar").load("/America-main/common/navbar.html", function() {
-    // 這裡的程式碼將在內容加載完成後執行
-    $(".on_processing").click(function() {
-      $('#modal_state').modal('show');
-    });
-  });
-});
+//$(function nvabar(){
+//  $("#navbar").load("/America-main/common/navbar.html", function() {
+//   // 這裡的程式碼將在內容加載完成後執行
+//    $(".on_processing").click(function() {
+//      $('#modal_state').modal('show');
+//    });
+//  });
+//});
 
-$(function footer(){
-  $("#footer").load("/America-main/common/footer.html");
-});
+//$(function footer(){
+//  $("#footer").load("/America-main/common/footer.html");
+//});
 
 
 // 獲取模態視窗元素
