@@ -1,8 +1,8 @@
 # 檔案名稱 .gitignore
 
 #忽略圖片檔
-.jpeg 
-.jpg
+#.jpeg 
+#.jpg
 
 #忽略 本地產生的文件
 .DS_Store
