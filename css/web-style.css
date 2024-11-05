@@ -256,8 +256,3 @@
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 5px;
 }
-
-/* making card be in the center */
-.row-1{
-  margin-left: 410px ;
-}
